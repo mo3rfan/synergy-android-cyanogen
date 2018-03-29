@@ -29,6 +29,7 @@ import org.synergy.common.screens.BasicScreen;
 import org.synergy.injection.Injection;
 import org.synergy.net.NetworkAddress;
 import org.synergy.net.SocketFactoryInterface;
+import org.synergy.net.SynergyConnectTask;
 import org.synergy.net.TCPSocketFactory;
 
 import android.app.Activity;
@@ -127,7 +128,6 @@ public class Synergy extends Activity {
         try {
         	SocketFactoryInterface socketFactory = new TCPSocketFactory();
        	   	NetworkAddress serverAddress = new NetworkAddress (ipAddress, port);
-        	serverAddress.resolve ();
 
         	Injection.startInjection(deviceName);
 
@@ -144,7 +144,7 @@ public class Synergy extends Activity {
             Log.debug ("Hostname: " + clientName);
             
 			Client client = new Client (getApplicationContext(), clientName, serverAddress, socketFactory, null, basicScreen);
-			client.connect ();
+			new SynergyConnectTask().execute(client);
 
 			if (mainLoopThread == null) {
 				mainLoopThread = new MainLoopThread();

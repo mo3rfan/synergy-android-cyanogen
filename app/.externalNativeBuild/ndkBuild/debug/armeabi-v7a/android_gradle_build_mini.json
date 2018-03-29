@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/mnt/F/pwork/synergy-android-cyanogen1/app/src/main/jni/Android.mk"
+  ],
+  "cleanCommands": [
+    "/mnt/F/Linux/AndroidSDK/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/src/main/jni/Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "synergy-jni-debug-armeabi-v7a": {
+      "artifactName": "synergy-jni",
+      "buildCommand": "/mnt/F/Linux/AndroidSDK/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/src/main/jni/Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/lib /mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libsynergy-jni.so",
+      "abi": "armeabi-v7a",
+      "output": "/mnt/F/pwork/synergy-android-cyanogen1/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libsynergy-jni.so"
+    }
+  }
+}

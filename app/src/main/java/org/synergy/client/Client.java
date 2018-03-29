@@ -114,15 +114,15 @@ public class Client implements EventTarget {
 
             socket.connect (serverAddress);
             
-            final Toast toast = Toast.makeText(context, "Connected to " + serverAddress.getHostname()
-                    + ":" + serverAddress.getPort(), Toast.LENGTH_SHORT);
-            toast.show();
+            //final Toast toast = Toast.makeText(context, "Connected to " + serverAddress.getHostname()
+            //        + ":" + serverAddress.getPort(), Toast.LENGTH_SHORT);
+            //toast.show();
 		} catch (IOException e) {
 			final String errorMessage = "Failed to connect to " + serverAddress.getHostname()
 					+ ":" + serverAddress.getPort();
 			Log.error(errorMessage);
-			final Toast toast = Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT);
-			toast.show();
+			//final Toast toast = Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT);
+			//toast.show();
 		}
 	}
 	

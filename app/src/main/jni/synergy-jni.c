@@ -16,10 +16,9 @@
  */
 #include <string.h>
 #include <jni.h>
-#include <android/log.h>
 
 #include "uinput.h"
-#include <android/input.h>
+#include "suinput.h"
 
 #define DEBUG_TAG "Synergy"
 

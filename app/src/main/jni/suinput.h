@@ -90,4 +90,6 @@ int suinput_release(int uinput_fd, uint16_t code);
 */
 int suinput_click(int uinput_fd, uint16_t code);
 
+int suinput_move_wheel (const int uinput_fd, const int32_t x, const int32_t y);
+
 #endif /* SUINPUT_H */

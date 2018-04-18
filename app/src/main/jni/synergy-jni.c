@@ -180,6 +180,15 @@ static void build_key_translation_table () {
     keyTranslation [13] = KEY_ENTER;
     keyTranslation [32] = KEY_SPACE;
 
+    keyTranslation [57517] = KEY_MUTE;
+    keyTranslation [57518] = KEY_VOLUMEDOWN;
+    keyTranslation [57519] = KEY_VOLUMEUP;
+    keyTranslation [57520] = KEY_NEXTSONG;
+    keyTranslation [57521] = KEY_PREVIOUSSONG;
+    keyTranslation [57523] = KEY_PLAYPAUSE;
+    keyTranslation [57528] = KEY_BRIGHTNESSDOWN;
+    keyTranslation [57529] = KEY_BRIGHTNESSUP;
+
     // Arrows
     keyTranslation [61265] = KEY_LEFT;
     keyTranslation [61266] = KEY_UP;

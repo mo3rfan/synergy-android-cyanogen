@@ -195,6 +195,7 @@ static void build_key_translation_table () {
     keyTranslation [61376] = KEY_BACK;   // F3 to BACK
     keyTranslation [61377] = KEY_SEARCH; // F4 to SEARCH
     keyTranslation [61378] = KEY_POWER;  // F5 to POWER
+    keyTranslation [61411] = KEY_LEFTCTRL;
 }
 
 static inline int keycode (int key) {

@@ -161,6 +161,16 @@ static void build_key_translation_table () {
 	keyTranslation [','] = KEY_COMMA;
 	keyTranslation ['<'] = KEY_COMMA;
 
+    keyTranslation[';'] = KEY_SEMICOLON;
+    keyTranslation[':'] = KEY_SEMICOLON;
+    keyTranslation['['] = KEY_LEFTBRACE;
+    keyTranslation[']'] = KEY_RIGHTBRACE;
+    keyTranslation['{'] = KEY_LEFTBRACE;
+    keyTranslation['}'] = KEY_RIGHTBRACE;
+    keyTranslation['"'] = KEY_APOSTROPHE;
+    keyTranslation['\''] = KEY_APOSTROPHE;
+    keyTranslation['\\'] = KEY_BACKSLASH;
+    keyTranslation['|'] = KEY_BACKSLASH;
 
     keyTranslation [61192] = KEY_BACKSPACE;
     keyTranslation [8] = KEY_BACKSPACE;
